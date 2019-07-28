@@ -1,0 +1,71 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Start Rails server",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/bin/rails",
+            "args": [
+                "server",
+                "-p",
+                "3000"
+            ]
+        },
+        {
+            "name": "Debug Rails server",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "useBundler": true,
+            "pathToBundler": "/home/roger/.rvm/rubies/ruby-2.4.1/bin/bundle",
+            "pathToRDebugIDE": "/home/roger/.rvm/gems/ruby-2.4.1/gems/ruby-debug-ide-0.7.0",
+            "program": "${workspaceRoot}/bin/rails",
+            "args": [
+                "server",
+                "-p",
+                "3000",
+                "-b",
+                "0.0.0.0"
+            ]
+        },
+        {
+            "name": "Run RSpec - all",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "/path/to/rubygem/bin/rspec",
+            "args": [
+                "--pattern",
+                "${workspaceRoot}/spec/**/*_rspec.rb"
+            ]
+        },
+        {
+            "name": "Debug RSpec - open spec file",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "useBundler": true,
+            "pathToBundler": "/path/to/rubygem/wrappers/bundle",
+            "pathToRDebugIDE": "/path/to/rubygem/gems/ruby-debug-ide-x.x.x/bin/rdebug-ide",
+            "debuggerPort": "1235",
+            "program": "/path/to/rubygem/bin/rspec",
+            "args": [
+                "${file}"
+            ]
+        },
+        {
+          "name": "Debug RSpec - open spec file on a certain line",
+          "type": "Ruby",
+          "request": "launch",
+          "cwd": "${workspaceRoot}",
+          "useBundler": true,
+          "pathToBundler": "/path/to/rubygem/wrappers/bundle",
+          "pathToRDebugIDE": "/path/to/rubygem/gems/ruby-debug-ide-x.x.x/bin/rdebug-ide",
+          "debuggerPort": "1235",
+          "program": "/path/to/rubygem/bin/rspec",
+          "args": ["${file}:${lineNumber}"]
+        }
+    ]
+}

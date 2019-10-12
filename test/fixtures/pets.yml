@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  person: one
+  recomendation: MyString
+
+two:
+  name: MyString
+  person: two
+  recomendation: MyString

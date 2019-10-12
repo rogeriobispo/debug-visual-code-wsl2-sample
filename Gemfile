@@ -36,6 +36,7 @@ group :development, :test do
   gem 'pry-nav'
   gem 'ruby-debug-ide', '~> 0.7.0'
   gem 'debase'
+  gem 'rspec-rails', '~> 3.8'
 end
 
 group :development do

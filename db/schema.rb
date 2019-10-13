@@ -28,13 +28,13 @@ ActiveRecord::Schema.define(version: 2019_10_12_144051) do
   end
 
   create_table "people", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "pets", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.integer "person_id"
     t.string "recomendation"
     t.datetime "created_at", null: false

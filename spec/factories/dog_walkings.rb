@@ -1,9 +1,7 @@
 FactoryBot.define do
-  factory :dog_walking do
       start_time = (Time.now - 30.minutes)
       end_time = Time.now
-      teste { binding.pry }
-      person { create(:person) }
+  factory :dog_walking do
       status { nil }
       scheduled_date { Date.today }
       price { 0.0 }

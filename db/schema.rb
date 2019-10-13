@@ -13,15 +13,15 @@
 ActiveRecord::Schema.define(version: 2019_10_12_144051) do
 
   create_table "dog_walkings", force: :cascade do |t|
-    t.integer "person_id"
     t.integer "status"
+    t.integer "person_id"
     t.datetime "scheduled_date"
     t.decimal "price"
     t.time "duration"
     t.string "latitude"
     t.string "longitude"
-    t.time "start_time"
-    t.time "end_time"
+    t.string "start_time"
+    t.string "end_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["person_id"], name: "index_dog_walkings_on_person_id"

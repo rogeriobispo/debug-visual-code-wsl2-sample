@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2019_10_12_144051) do
     t.integer "person_id"
     t.datetime "scheduled_date"
     t.decimal "price"
-    t.time "duration"
+    t.string "duration"
     t.string "latitude"
     t.string "longitude"
     t.string "start_time"

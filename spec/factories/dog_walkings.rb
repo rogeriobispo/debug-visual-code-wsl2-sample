@@ -1,15 +1,15 @@
 FactoryBot.define do
-      start_time = (Time.now - 30.minutes)
-      end_time = Time.now
-  factory :dog_walking do
-      status { nil }
+   factory :dog_walking do
+      time_now = Time.now
+      status { 2 }
       scheduled_date { Date.today }
-      price { 0.0 }
-      duration { TimeHelper.diference_hour(start_time, end_time) }
+      person_id {create(:person).id}
+      price { 25.0 }
+      duration { TimeHelper.diference_hour(time_now - 30.minutes, time_now) }
       latitude { 73.667595 }
       longitude { 41.022921 }
-      start_time { TimeHelper.time_format(start_time) }
-      end_time { TimeHelper.time_format(end_time) }
+      start_time { TimeHelper.time_format(time_now - 30.minutes) }
+      end_time { TimeHelper.time_format(time_now) }
   
 
     trait :created do  

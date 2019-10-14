@@ -6,7 +6,7 @@ class CreateDogWalkings < ActiveRecord::Migration[5.2]
       t.references :person
       t.datetime :scheduled_date
       t.decimal :price
-      t.time :duration
+      t.string :duration
       t.string :latitude
       t.string :longitude
       t.string :start_time

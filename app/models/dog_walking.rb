@@ -1,4 +1,4 @@
 class DogWalking < ApplicationRecord
-  has_many :pets
-  has_many :pets, through: :walking_pets
+  has_many :walking_pets
+  has_many :pet, through: :walking_pets
 end

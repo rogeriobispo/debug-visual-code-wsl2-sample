@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a222fb8-98e6-477a-8a74-70c90a4a738e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/services/dog_walking_service.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/helper/time_helper_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/services/dog_walking_service_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/v1/dog_walking_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/v1/dog_walking_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/time_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/time_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/dog_walking.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/dog_walking.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/pet.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/pet.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/dog_walking/dog_walking_service.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20191012144051_walking_pet.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20191012144051_walking_pet.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/controllers/dog_walking_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/dog_walking_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/dog_walkings.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/dog_walkings.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/services/dog_walking/dog_walking_service_spec.rb" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -32,7 +20,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/debug_visual_code_wsl2_sample@Development__debug_visual_code_wsl2_sample.rcov" NAME="Development: debug-visual-code-wsl2-sample Coverage Results" MODIFIED="1571067537871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="debug-visual-code-wsl2-sample" />
+    <SUITE FILE_PATH="coverage/debug_visual_code_wsl2_sample@V1__DogWalkingController_get__index_when_the_id_does_exists__debug_visual_code_wsl2_sample.rcov" NAME="V1::DogWalkingController get #index when the id does exists: debug-visual-code-wsl2-sample Coverage Results" MODIFIED="1571071542783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="debug-visual-code-wsl2-sample" />
+    <SUITE FILE_PATH="coverage/debug_visual_code_wsl2_sample@Development__debug_visual_code_wsl2_sample.rcov" NAME="Development: debug-visual-code-wsl2-sample Coverage Results" MODIFIED="1571071552127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="debug-visual-code-wsl2-sample" />
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -46,11 +35,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="dog_walking_controller.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dog_walking_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/v1/dog_walking_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+            <state relative-caret-position="525">
+              <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dog_walking_controller_spec.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/controllers/dog_walking_controller_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="887">
+              <caret line="88" column="36" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -58,8 +56,8 @@
       <file leaf-file-name="dog_walking_service_spec.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/services/dog_walking_service_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="9" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -68,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/app/services/dog_walking_service.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -127,7 +125,6 @@
         <option value="$PROJECT_DIR$/app/models/pet.rb" />
         <option value="$PROJECT_DIR$/spec/time_helper_spec.rb" />
         <option value="$PROJECT_DIR$/spec/services/dog_walking/dog_walking_service_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/controllers/dog_walking_controller_spec.rb" />
         <option value="$PROJECT_DIR$/spec/helper/time_helper_spec.rb" />
         <option value="$PROJECT_DIR$/app/helpers/time_helper.rb" />
         <option value="$PROJECT_DIR$/app/services/dog_walking/dog_walking_service.rb" />
@@ -136,6 +133,7 @@
         <option value="$PROJECT_DIR$/app/services/dog_walking_service.rb" />
         <option value="$PROJECT_DIR$/spec/services/dog_walking_service_spec.rb" />
         <option value="$PROJECT_DIR$/app/controllers/v1/dog_walking_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/dog_walking_controller_spec.rb" />
       </list>
     </option>
   </component>
@@ -144,6 +142,11 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -156,9 +159,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="-1" />
-    <option name="width" value="1080" />
-    <option name="height" value="1897" />
+    <option name="x" value="-248" />
+    <option name="y" value="418" />
+    <option name="width" value="1070" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -206,6 +210,12 @@
               <item name="debug-visual-code-wsl2-sample" type="b2602c69:ProjectViewProjectNode" />
               <item name="debug-visual-code-wsl2-sample" type="462c0819:PsiDirectoryNode" />
               <item name="spec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="debug-visual-code-wsl2-sample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="debug-visual-code-wsl2-sample" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="debug-visual-code-wsl2-sample" type="b2602c69:ProjectViewProjectNode" />
@@ -259,6 +269,39 @@
     </option>
   </component>
   <component name="RunManager" selected="Rails.Development: debug-visual-code-wsl2-sample">
+    <configuration name="V1::DogWalkingController get #index when the id does exists: debug-visual-code-wsl2-sample" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="debug-visual-code-wsl2-sample" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/controllers/dog_walking_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="V1::DogWalkingController get #index when the id does exists" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+    </configuration>
     <configuration name="Development: debug-visual-code-wsl2-sample" type="RailsRunConfigurationType" factoryName="Rails">
       <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
       <module name="debug-visual-code-wsl2-sample" />
@@ -355,7 +398,13 @@
       <item itemvalue="Rake.spec: debug-visual-code-wsl2-sample" />
       <item itemvalue="Rails.Production: debug-visual-code-wsl2-sample" />
       <item itemvalue="Rails.Development: debug-visual-code-wsl2-sample" />
+      <item itemvalue="RSpec.V1::DogWalkingController get #index when the id does exists: debug-visual-code-wsl2-sample" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="RSpec.V1::DogWalkingController get #index when the id does exists: debug-visual-code-wsl2-sample" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" />
   <component name="SvnConfiguration">
@@ -368,12 +417,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571046284067</updated>
-      <workItem from="1571046286451" duration="13279000" />
+      <workItem from="1571046286451" duration="17173000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="V1__DogWalkingController_get_#index_when_the_id_does_exists__debug-visual-code-wsl2-sample - 2019.10.14 at 13h 44m 25s.xml">
+      <configuration name="V1::DogWalkingController get #index when the id does exists: debug-visual-code-wsl2-sample" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="V1__DogWalkingController_get_#index_when_the_id_does_exists__debug-visual-code-wsl2-sample - 2019.10.14 at 13h 45m 23s.xml">
+      <configuration name="V1::DogWalkingController get #index when the id does exists: debug-visual-code-wsl2-sample" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="V1__DogWalkingController_get_#index_when_the_id_does_exists__debug-visual-code-wsl2-sample - 2019.10.14 at 13h 45m 45s.xml">
+      <configuration name="V1::DogWalkingController get #index when the id does exists: debug-visual-code-wsl2-sample" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13279000" />
+    <option name="totallyTimeSpent" value="17173000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1080" height="1897" extended-state="6" />
@@ -383,10 +443,10 @@
       <window_info anchor="bottom" id="Messages" weight="0.32979912" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32983193" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32979912" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.35993305" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26666668" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.35993305" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26666668" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32979912" />
@@ -421,7 +481,7 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -439,13 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/dog_walking_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -507,24 +560,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/services/dog_walking_service_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/dog_walking_service.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/services/dog_walking_service_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="9" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/v1/dog_walking_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+        <state relative-caret-position="525">
+          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/dog_walking_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="887">
+          <caret line="88" column="36" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
         </state>
       </provider>
     </entry>

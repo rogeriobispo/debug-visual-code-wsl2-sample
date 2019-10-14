@@ -29,4 +29,8 @@ class V1::DogWalkingController < ApplicationController
       render json: { 'message': 'not_found'}, status: :not_found
     end
   end
+
+  def dog_walking_params
+    params.permit(:name, :status, :description, :code)
+  end
 end

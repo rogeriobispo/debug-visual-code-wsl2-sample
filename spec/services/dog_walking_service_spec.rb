@@ -9,8 +9,6 @@ RSpec.describe DogWalkingService, type: :service do
     FactoryBot.create(:dog_walking, :min30past)
     FactoryBot.create(:dog_walking, :min60past)
 
-
-
     FactoryBot.create(:dog_walking)
   end
   describe '.list' do

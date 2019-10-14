@@ -6,11 +6,7 @@ class V1::DogWalkingController < ApplicationController
   end
 
   def show
-    if @walking
-      render json: @walking, status: :ok
-    else
-      render json: {'not_found': 'Walking não localizada'}, status: :not_found
-    end 
+    render json: @walking, status: :ok if @walking
   end
 
   def create

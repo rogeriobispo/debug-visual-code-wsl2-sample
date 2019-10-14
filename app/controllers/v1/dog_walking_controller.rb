@@ -1,7 +1,8 @@
 class V1::DogWalkingController < ApplicationController
+  before_action :set_walking, only[:show, :start_walking, :stop_walking]
 
   def index
-
+    render json: DogWalkingService.list(params[:filter])
   end
 
   def show
@@ -25,7 +26,7 @@ class V1::DogWalkingController < ApplicationController
   end
 
   private 
-  def set_person
+  def set_walking
     @walking = DogWalking.find(params[:id]);
   end
 end

@@ -27,6 +27,13 @@ ActiveRecord::Schema.define(version: 2019_10_12_144051) do
     t.index ["person_id"], name: "index_dog_walkings_on_person_id"
   end
 
+  create_table "dog_walkings_pets", force: :cascade do |t|
+    t.integer "pet_id"
+    t.integer "dog_walking_id"
+    t.index ["dog_walking_id"], name: "index_dog_walkings_pets_on_dog_walking_id"
+    t.index ["pet_id"], name: "index_dog_walkings_pets_on_pet_id"
+  end
+
   create_table "people", force: :cascade do |t|
     t.string "name", null: false
     t.datetime "created_at", null: false
@@ -40,13 +47,6 @@ ActiveRecord::Schema.define(version: 2019_10_12_144051) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["person_id"], name: "index_pets_on_person_id"
-  end
-
-  create_table "walking_pets", force: :cascade do |t|
-    t.integer "pet_id"
-    t.integer "dog_walking_id"
-    t.index ["dog_walking_id"], name: "index_walking_pets_on_dog_walking_id"
-    t.index ["pet_id"], name: "index_walking_pets_on_pet_id"
   end
 
 end

@@ -13,6 +13,7 @@ require "action_cable/engine"
 # require "sprockets/railtie"
 require "rails/test_unit/railtie"
 Dir["helpers/*.rb"].each {|file| require file }
+Dir["services/*.rb"].each {|file| require file }
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)

@@ -4,6 +4,7 @@ FactoryBot.define do
       status { 2 }
       scheduled_date { Date.today }
       person_id {create(:person).id}
+      pets {[create(:pet), create(:pet)]}
       price { 25.0 }
       duration { TimeHelper.diference_hour(time_now - 30.minutes, time_now) }
       latitude { 73.667595 }

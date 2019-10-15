@@ -73,4 +73,11 @@ RSpec.describe DogWalkingService, type: :service do
       expect(DogWalkingService.price_calculate(duration, pets).to_f).to eq(75.0)
     end
   end
+
+  describe ".create_walking" do
+    it 'must return instance of dogwalking' do
+      dg = DogWalkingService.create_walking({duration: '30'})
+      expect(dg.instance_of?(DogWalking)).to be(true)
+    end
+  end
 end

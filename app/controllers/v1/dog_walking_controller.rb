@@ -19,15 +19,19 @@ class V1::DogWalkingController < ApplicationController
   end
 
   def start_walking
-    render json: @walking.start!, status: :ok if @walking.created?
-    render json: { 'status': 'alread started' }, status: :unprocessable_entity if @walking.started?
-    render json: { 'status': 'alread finished' }, status: :unprocessable_entity if @walking.finished?
+    if @walking.created?
+      render json: @walking.started!, status: :ok
+    else
+      render json: { 'status': 'already started or finished' }, status: :unprocessable_entity
+    end
   end
 
   def stop_walking
-    render json: @walking.finished!, status: :ok if @walking.started?
-    render json: { 'status': 'already finished' }, status: :unprocessable_entity if @walking.finished?
-    render json: { 'status': 'cant be finished' }, status: :unprocessable_entity if @walking.created?
+    if @walking.started?
+      render json: @walking.finished!, status: :ok
+    else
+      render json: { 'status': 'walking can\'t be finished it\'s not started' }, status: :unprocessable_entity
+    end
   end
 
   private 

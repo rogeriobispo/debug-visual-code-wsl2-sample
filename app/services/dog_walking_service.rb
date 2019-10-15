@@ -18,10 +18,13 @@ module DogWalkingService
   end
 
   def self.create_walking(params)
-    params['pets'] = Pet.where(id: params[:pets])
-    w = DogWalking.new(params)
-    w.price = DogWalkingService.price_calculate(w.duration, params[:pets] )
-    w
+    begin
+      params['pets'] = Pet.where(id: params[:pets])
+      w = DogWalking.new(params)
+      w.price = DogWalkingService.price_calculate(w.duration, params[:pets])
+      w
+    rescue
+      DogWalking.new
+    end
   end
-
 end

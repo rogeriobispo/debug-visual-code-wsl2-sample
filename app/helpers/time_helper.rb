@@ -3,7 +3,7 @@ module TimeHelper
     begin
       d = d.to_time
       "#{'%02d' % d.hour}:#{'%02d' % d.min}:#{'%02d' % d.sec}"
-    rescue => e
+    rescue
         return nil
     end
   end
@@ -11,7 +11,7 @@ module TimeHelper
   def self.diference_hour(start_time, end_time)
     begin
       ((end_time.to_time - start_time.to_time) / 60).to_i
-    rescue => e
+    rescue
       return nil
     end
   end

@@ -1,24 +1,34 @@
 # README
+## Dog Walking API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+end points 
 
-Things you may want to cover:
+GET /v1/dog_walking # Retorna as dogs_walkings ?filter=1 a partir de hoje  ?filter=2 retorna todas
+GET /v1/dog_walking/:id # Retorna o detalhe da dog_walking
+POST /v1/dog_walking  # cria uma dogwalking
+  Parameters
+  {
+	  "scheduled_date": "2019-10-15",
+	  "duration": 30,
+	  "longitude": "484898.884",
+	  "latitude": "484898.884",
+	  "person_id": 1,
+	  "pets": [2]
+  }
 
-* Ruby version
+  PATCH /v1/dog_walking/:id/start_walking #Inicia uma dog_walking se esta criada
 
-* System dependencies
+  PATCH /v1/dog_walking/:id/stop_walking #para uma dog_walking se esta iniciada
 
-* Configuration
+## configurar aplicação
+ - clonar 
+ - bundle install
+ - rails db:create db:migrate
 
-* Database creation
+## Iniciar servidor
 
-* Database initialization
+ - rails s
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ ## run tests 
+  - rspec -fd
+  

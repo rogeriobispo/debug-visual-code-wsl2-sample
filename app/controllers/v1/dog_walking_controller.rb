@@ -10,15 +10,24 @@ class V1::DogWalkingController < ApplicationController
   end
 
   def create
-    render json: { "lista": 'walking' }, status: :ok
+    walking = DogWalkingService.create_walking(dog_walking_params)
+    if walking.save 
+      render json: walking , status: :ok
+    else 
+      render json: walking.errors , status: :unprocessable_entity
+    end
   end
 
   def start_walking
-    render json: { "lista": 'walking' }, status: :ok
+    render json: @walking.start!, status: :ok if @walking.created?
+    render json: { 'status': 'alread started' }, status: :unprocessable_entity if @walking.started?
+    render json: { 'status': 'alread finished' }, status: :unprocessable_entity if @walking.finished?
   end
 
   def stop_walking
-    render json: { "lista": 'walking' }, status: :ok
+    render json: @walking.finished!, status: :ok if @walking.started?
+    render json: { 'status': 'already finished' }, status: :unprocessable_entity if @walking.finished?
+    render json: { 'status': 'cant be finished' }, status: :unprocessable_entity if @walking.created?
   end
 
   private 
@@ -26,11 +35,17 @@ class V1::DogWalkingController < ApplicationController
     begin
       @walking = DogWalking.find(params[:id])
     rescue
-      render json: { 'message': 'not_found'}, status: :not_found
+      render json: { 'Walking': 'not_found'}, status: :not_found
     end
   end
 
   def dog_walking_params
-    params.permit(:name, :status, :description, :code)
+    params.permit(:scheduled_date,  
+                          :duration, 
+                          :latitude, 
+                          :longitude,
+                          :person_id,
+                          pets: []
+                        )
   end
 end

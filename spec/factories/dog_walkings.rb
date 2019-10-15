@@ -25,21 +25,21 @@ FactoryBot.define do
     end
 
     trait :finished do  
-      status { 2 } #fished
+      status { 2 } #finished
     end
 
     trait :min30 do
       start_time = Time.now() 
       start_time { TimeHelper.time_format(start_time - 29.minutes) }
       end_time { TimeHelper.time_format(start_time) }
-      duration { TimeHelper.diference_hour(start_time, end_time) }
+      duration { 30 }
     end
 
     trait :min60 do
       start_time = Time.now() 
       start_time { TimeHelper.time_format(start_time - 59.minutes) }
       end_time { TimeHelper.time_format(start_time) } 
-      duration { TimeHelper.diference_hour(start_time, end_time) } 
+      duration { 60 } 
     end
     
     trait :min30future do
@@ -47,7 +47,7 @@ FactoryBot.define do
       scheduled_date { Date.today + rand(365).days } 
       start_time { TimeHelper.time_format(start_time - 29.minutes) }
       end_time { start_time }
-      duration { TimeHelper.diference_hour(start_time, end_time) }
+      duration { 30 }
     end
 
     trait :min60future do
@@ -55,7 +55,7 @@ FactoryBot.define do
       scheduled_date { Date.today - rand(365).days }
       start_time { TimeHelper.time_format(start_time - 59.minutes) }
       end_time { TimeHelper.time_format(start_time) }  
-      duration { TimeHelper.diference_hour(start_time, end_time) }
+      duration { 60 }
     end
 
     
@@ -64,7 +64,7 @@ FactoryBot.define do
       scheduled_date { Date.today - rand(365).days }
       start_time { TimeHelper.time_format(start_time - 29.minutes) }
       end_time { TimeHelper.time_format(start_time) }
-      duration { TimeHelper.diference_hour(start_time, end_time) }
+      duration { 30 }
     end
 
     trait :min60past do
@@ -72,7 +72,7 @@ FactoryBot.define do
       scheduled_date { Date.today - rand(365).days }
       start_time { TimeHelper.time_format(start_time - 59.minutes) }
       end_time { TimeHelper.time_format(start_time) }
-      duration { TimeHelper.diference_hour(start_time, end_time) }
+      duration { 60 }
     end
   end
 end
